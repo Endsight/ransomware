@@ -1,0 +1,197 @@
+﻿<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.Management.Infrastructure.CimInstance#Root/Microsoft/Windows/FSRM/MSFT_FSRMFileScreenTemplate</T>
+      <T>Microsoft.Management.Infrastructure.CimInstance#MSFT_FSRMFileScreenTemplate</T>
+      <T>Microsoft.Management.Infrastructure.CimInstance</T>
+      <T>System.Object</T>
+    </TN>
+    <ToString>MSFT_FSRMFileScreenTemplate (Name = "CryptoMalware-Prod")</ToString>
+    <Props>
+      <B N="Active">false</B>
+      <S N="Description"></S>
+      <Obj N="IncludeGroup" RefId="1">
+        <TN RefId="1">
+          <T>System.String[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>CryptoMalware-Prod</S>
+        </LST>
+      </Obj>
+      <S N="Name">CryptoMalware-Prod</S>
+      <Obj N="Notification" RefId="2">
+        <TN RefId="2">
+          <T>Microsoft.Management.Infrastructure.CimInstance[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <Obj RefId="3">
+            <TN RefId="3">
+              <T>Microsoft.Management.Infrastructure.CimInstance#Root/Microsoft/Windows/FSRM/MSFT_FSRMAction</T>
+              <T>Microsoft.Management.Infrastructure.CimInstance#MSFT_FSRMAction</T>
+              <T>Microsoft.Management.Infrastructure.CimInstance</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>MSFT_FSRMAction</ToString>
+            <Props>
+              <S N="Body">Crypto Malware Alert!_x000D__x000A_The crypto type malware has been detected.  The "Server" service has been stopped and disabled to prevent further access to the file shares._x000D__x000A__x000D__x000A_After the infection is cleaned you must:_x000D__x000A_- Start the "Server" service (and any dependent services) to enable file share access_x000D__x000A_- Restart the "File Server Resource Manager" service to re-arm the monitoring._x000D__x000A__x000D__x000A_User _x000D__x000A_[Source Io Owner]_x000D__x000A_attempted to save _x000D__x000A_[Source File Path] _x000D__x000A_to_x000D__x000A_[File Screen Path]_x000D__x000A_on the_x000D__x000A_[Server] server. _x000D__x000A_This file is in the [Violated File Group] file group, which is not permitted on the server._x000D__x000A__x000D__x000A_A report with more information has been saved to:_x000D__x000A_"C:\StorageReports\Incident"</S>
+              <Nil N="Command" />
+              <Nil N="CommandParameters" />
+              <U32 N="EventType">2</U32>
+              <I32 N="KillTimeOut">-1</I32>
+              <Nil N="MailBCC" />
+              <Nil N="MailCC" />
+              <Nil N="MailTo" />
+              <Nil N="ReportTypes" />
+              <I32 N="RunLimitInterval">60</I32>
+              <U32 N="SecurityLevel">0</U32>
+              <B N="ShouldLogError">false</B>
+              <Nil N="Subject" />
+              <U32 N="Type">1</U32>
+              <Nil N="WorkingDirectory" />
+              <Nil N="PSComputerName" />
+            </Props>
+            <MS>
+              <Obj N="__ClassMetadata" RefId="4">
+                <TN RefId="4">
+                  <T>System.Collections.ArrayList</T>
+                  <T>System.Object</T>
+                </TN>
+                <LST>
+                  <Obj RefId="5">
+                    <MS>
+                      <S N="ClassName">MSFT_FSRMAction</S>
+                      <S N="Namespace">Root/Microsoft/Windows/FSRM</S>
+                      <S N="ServerName">2012-R2-TEST01</S>
+                      <I32 N="Hash">1243003784</I32>
+                      <S N="MiXml">&lt;CLASS NAME="MSFT_FSRMAction"&gt;&lt;QUALIFIER NAME="dynamic" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="provider" TYPE="string"&gt;&lt;VALUE&gt;FSRMWmiProvider&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;PROPERTY NAME="Body" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="Command" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="CommandParameters" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="EventType" TYPE="uint32"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="ValueMap" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;0&lt;/VALUE&gt;&lt;VALUE&gt;1&lt;/VALUE&gt;&lt;VALUE&gt;2&lt;/VALUE&gt;&lt;VALUE&gt;3&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="Values" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;None&lt;/VALUE&gt;&lt;VALUE&gt;Information&lt;/VALUE&gt;&lt;VALUE&gt;Warning&lt;/VALUE&gt;&lt;VALUE&gt;Error&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="KillTimeOut" TYPE="sint32"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="MailBCC" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="MailCC" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="MailTo" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY.ARRAY NAME="ReportTypes" TYPE="uint32"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="ValueMap" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;1&lt;/VALUE&gt;&lt;VALUE&gt;2&lt;/VALUE&gt;&lt;VALUE&gt;3&lt;/VALUE&gt;&lt;VALUE&gt;4&lt;/VALUE&gt;&lt;VALUE&gt;5&lt;/VALUE&gt;&lt;VALUE&gt;6&lt;/VALUE&gt;&lt;VALUE&gt;8&lt;/VALUE&gt;&lt;VALUE&gt;9&lt;/VALUE&gt;&lt;VALUE&gt;10&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="Values" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;LargeFiles&lt;/VALUE&gt;&lt;VALUE&gt;FilesByFileGroup&lt;/VALUE&gt;&lt;VALUE&gt;LeastRecentlyAccessed&lt;/VALUE&gt;&lt;VALUE&gt;MostRecentlyAccessed&lt;/VALUE&gt;&lt;VALUE&gt;QuotaUsage&lt;/VALUE&gt;&lt;VALUE&gt;FilesByOwner&lt;/VALUE&gt;&lt;VALUE&gt;DuplicateFiles&lt;/VALUE&gt;&lt;VALUE&gt;FileScreenAuditFiles&lt;/VALUE&gt;&lt;VALUE&gt;FilesByProperty&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY.ARRAY&gt;&lt;PROPERTY NAME="RunLimitInterval" TYPE="sint32"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="SecurityLevel" TYPE="uint32"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="ValueMap" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;0&lt;/VALUE&gt;&lt;VALUE&gt;1&lt;/VALUE&gt;&lt;VALUE&gt;2&lt;/VALUE&gt;&lt;VALUE&gt;3&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="Values" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;None&lt;/VALUE&gt;&lt;VALUE&gt;NetworkService&lt;/VALUE&gt;&lt;VALUE&gt;LocalService&lt;/VALUE&gt;&lt;VALUE&gt;LocalSystem&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="ShouldLogError" TYPE="boolean"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="Subject" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="Type" TYPE="uint32"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="ValueMap" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;1&lt;/VALUE&gt;&lt;VALUE&gt;2&lt;/VALUE&gt;&lt;VALUE&gt;3&lt;/VALUE&gt;&lt;VALUE&gt;4&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="Values" TYPE="string"&gt;&lt;VALUE.ARRAY&gt;&lt;VALUE&gt;Event&lt;/VALUE&gt;&lt;VALUE&gt;Email&lt;/VALUE&gt;&lt;VALUE&gt;Command&lt;/VALUE&gt;&lt;VALUE&gt;Report&lt;/VALUE&gt;&lt;/VALUE.ARRAY&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="WorkingDirectory" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;METHOD NAME="CreateAction" TYPE="uint64"&gt;&lt;QUALIFIER NAME="implemented" TYPE="boolean" TOSUBCLASS="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="static" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;PARAMETER NAME="Body" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;5&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="Command" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;7&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="CommandParameters" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;9&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="EventType" TYPE="uint32"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;6&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="KillTimeOut" TYPE="sint32"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;11&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="MailBCC" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;3&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="MailCC" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;2&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="MailTo" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;1&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER.ARRAY NAME="ReportTypes" TYPE="uint32"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;13&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER.ARRAY&gt;&lt;PARAMETER NAME="RunLimitInterval" TYPE="sint32"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;14&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="SecurityLevel" TYPE="uint32"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;10&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="ShouldLogError" TYPE="boolean"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;12&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="Subject" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;4&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="Type" TYPE="uint32"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;0&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="WorkingDirectory" TYPE="string"&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;8&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="In" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;PARAMETER NAME="Action" TYPE="string"&gt;&lt;QUALIFIER NAME="EmbeddedInstance" TYPE="string"&gt;&lt;VALUE&gt;MSFT_FSRMAction&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="ID" TYPE="sint32" OVERRIDABLE="false"&gt;&lt;VALUE&gt;15&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="Out" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PARAMETER&gt;&lt;/METHOD&gt;&lt;/CLASS&gt;</S>
+                    </MS>
+                  </Obj>
+                </LST>
+              </Obj>
+              <S N="Type">Event</S>
+              <S N="SecurityLevel">None</S>
+              <S N="EventType">Warning</S>
+              <Obj N="ReportTypes" RefId="6">
+                <S></S>
+              </Obj>
+            </MS>
+          </Obj>
+          <Obj RefId="7">
+            <TNRef RefId="3" />
+            <ToString>MSFT_FSRMAction</ToString>
+            <Props>
+              <Nil N="Body" />
+              <Nil N="Command" />
+              <Nil N="CommandParameters" />
+              <U32 N="EventType">0</U32>
+              <I32 N="KillTimeOut">-1</I32>
+              <Nil N="MailBCC" />
+              <Nil N="MailCC" />
+              <S N="MailTo"></S>
+              <Obj N="ReportTypes" RefId="8">
+                <TN RefId="5">
+                  <T>System.UInt32[]</T>
+                  <T>System.Array</T>
+                  <T>System.Object</T>
+                </TN>
+                <LST>
+                  <U32>9</U32>
+                </LST>
+              </Obj>
+              <I32 N="RunLimitInterval">60</I32>
+              <U32 N="SecurityLevel">0</U32>
+              <B N="ShouldLogError">false</B>
+              <Nil N="Subject" />
+              <U32 N="Type">4</U32>
+              <Nil N="WorkingDirectory" />
+              <Nil N="PSComputerName" />
+            </Props>
+            <MS>
+              <Obj N="__ClassMetadata" RefId="9">
+                <TNRef RefId="4" />
+                <LST>
+                  <Obj RefId="10">
+                    <MS>
+                      <S N="ClassName">MSFT_FSRMAction</S>
+                      <S N="Namespace">Root/Microsoft/Windows/FSRM</S>
+                      <S N="ServerName">2012-R2-TEST01</S>
+                      <I32 N="Hash">1243003784</I32>
+                    </MS>
+                  </Obj>
+                </LST>
+              </Obj>
+              <S N="Type">Report</S>
+              <S N="SecurityLevel">None</S>
+              <S N="EventType">None</S>
+              <S N="ReportTypes">FileScreenAuditFiles</S>
+            </MS>
+          </Obj>
+          <Obj RefId="11">
+            <TNRef RefId="3" />
+            <ToString>MSFT_FSRMAction</ToString>
+            <Props>
+              <Nil N="Body" />
+              <S N="Command">%windir%\system32\cmd.exe</S>
+              <S N="CommandParameters">/c "C:\Scripts\StopServerSvc.cmd"</S>
+              <U32 N="EventType">0</U32>
+              <I32 N="KillTimeOut">0</I32>
+              <Nil N="MailBCC" />
+              <Nil N="MailCC" />
+              <Nil N="MailTo" />
+              <Nil N="ReportTypes" />
+              <I32 N="RunLimitInterval">60</I32>
+              <U32 N="SecurityLevel">3</U32>
+              <B N="ShouldLogError">true</B>
+              <Nil N="Subject" />
+              <U32 N="Type">3</U32>
+              <S N="WorkingDirectory">%windir%\system32\</S>
+              <Nil N="PSComputerName" />
+            </Props>
+            <MS>
+              <Obj N="__ClassMetadata" RefId="12">
+                <TNRef RefId="4" />
+                <LST>
+                  <Obj RefId="13">
+                    <MS>
+                      <S N="ClassName">MSFT_FSRMAction</S>
+                      <S N="Namespace">Root/Microsoft/Windows/FSRM</S>
+                      <S N="ServerName">2012-R2-TEST01</S>
+                      <I32 N="Hash">1243003784</I32>
+                    </MS>
+                  </Obj>
+                </LST>
+              </Obj>
+              <S N="Type">Command</S>
+              <S N="SecurityLevel">LocalSystem</S>
+              <S N="EventType">None</S>
+              <Ref N="ReportTypes" RefId="6" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <B N="UpdateDerived">false</B>
+      <B N="UpdateDerivedMatching">false</B>
+      <Nil N="PSComputerName" />
+    </Props>
+    <MS>
+      <Obj N="__ClassMetadata" RefId="14">
+        <TNRef RefId="4" />
+        <LST>
+          <Obj RefId="15">
+            <MS>
+              <S N="ClassName">MSFT_FSRMFileScreenTemplate</S>
+              <S N="Namespace">Root/Microsoft/Windows/FSRM</S>
+              <S N="ServerName">2012-R2-TEST01</S>
+              <I32 N="Hash">1229197512</I32>
+              <S N="MiXml">&lt;CLASS NAME="MSFT_FSRMFileScreenTemplate"&gt;&lt;QUALIFIER NAME="dynamic" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="provider" TYPE="string"&gt;&lt;VALUE&gt;FSRMWmiProvider&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;PROPERTY NAME="Active" TYPE="boolean"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="Description" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY.ARRAY NAME="IncludeGroup" TYPE="string"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY.ARRAY&gt;&lt;PROPERTY NAME="Name" TYPE="string"&gt;&lt;QUALIFIER NAME="key" TYPE="boolean" OVERRIDABLE="false"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY.ARRAY NAME="Notification" TYPE="string" EmbeddedObject="instance" EmbeddedClassName="MSFT_FSRMAction"&gt;&lt;QUALIFIER NAME="EmbeddedInstance" TYPE="string"&gt;&lt;VALUE&gt;MSFT_FSRMAction&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY.ARRAY&gt;&lt;PROPERTY NAME="UpdateDerived" TYPE="boolean"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;PROPERTY NAME="UpdateDerivedMatching" TYPE="boolean"&gt;&lt;QUALIFIER NAME="read" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;QUALIFIER NAME="write" TYPE="boolean"&gt;&lt;VALUE&gt;true&lt;/VALUE&gt;&lt;/QUALIFIER&gt;&lt;/PROPERTY&gt;&lt;/CLASS&gt;</S>
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+    </MS>
+  </Obj>
+</Objs>

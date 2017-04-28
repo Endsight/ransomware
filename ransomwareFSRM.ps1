@@ -1,6 +1,6 @@
-$decryptreadme = (Invoke-WebRequest "https://raw.githubusercontent.com/csmithendsight/ransomware/master/readme.txt").Content
+$decryptreadme = (Invoke-WebRequest "https://raw.githubusercontent.com/endsight/ransomware/master/$readme.txt").Content
 
-$fileexts = (Invoke-WebRequest "https://raw.githubusercontent.com/csmithendsight/ransomware/master/extensions.txt").Content
+$fileexts = (Invoke-WebRequest "https://raw.githubusercontent.com/endsight/ransomware/master/$extensions.txt").Content
 
 $filescreengroup = @()
 

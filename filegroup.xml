@@ -6,7 +6,7 @@
       <T>Microsoft.Management.Infrastructure.CimInstance</T>
       <T>System.Object</T>
     </TN>
-    <ToString>MSFT_FSRMFileGroup (Name = "CryptoMalware-Prod")</ToString>
+    <ToString>MSFT_FSRMFileGroup (Name = "CryptowallDEV")</ToString>
     <Props>
       <S N="Description"></S>
       <Nil N="ExcludePattern" />
